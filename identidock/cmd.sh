@@ -7,6 +7,7 @@ if [ "$ENV" = 'DEV' ]; then
 elif [ "$ENV" = 'UNIT' ]; then
     echo "Running Unit Tests"
     echo $PWD
+    echo $(ls)
     exec python "tests.py"
 else
   echo "Running Production Server"
